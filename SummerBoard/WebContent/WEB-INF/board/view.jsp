@@ -79,6 +79,8 @@
 		<c:if test="${board.fileName != null }">
 		<tr>
 			<td colspan="4" align="left"><span class="date">첨부파일:&nbsp;<a href="<%=request.getContextPath()%>/files/${board.fileName}" target="_blank">${board.fileName}</a></span></td>
+			<td colspan="4" align="left"><a href="/SummerBoard/download.do?fileName=${board.fileName }" >${board.fileName }</a></td>
+			
 		</tr>
 		</c:if>	
 		<tr>

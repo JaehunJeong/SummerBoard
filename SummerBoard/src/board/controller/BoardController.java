@@ -172,6 +172,7 @@ public class BoardController {
 		//글번호에 해당하는 comment를 가져온다.
 		
 		ModelAndView mav = new ModelAndView();//모델엔뷰객체를 생성하여
+		mav.addObject(uploadPath);
 		mav.addObject("board", board);
 		mav.addObject("commentList", commentList);
 		mav.setViewName("/board/view");//값을 넣고
@@ -379,4 +380,6 @@ public class BoardController {
 		
 		return mav;
 	}
+	
+	
 }
